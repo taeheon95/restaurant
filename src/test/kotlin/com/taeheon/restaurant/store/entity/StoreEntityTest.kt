@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory
 
 internal class StoreEntityTest : BehaviorSpec({
     val log = LoggerFactory.getLogger(this.javaClass)
-    given("생성") {
+    given("store entity test") {
         val store = StoreEntity(1L, "연산점", "부산시 연제구 묘봉산로 3", 10)
         `when`("개점 시간 설정 할 때 이상한 값을 할당하면") {
             then("IllegalArgumentException을 던진다.") {
